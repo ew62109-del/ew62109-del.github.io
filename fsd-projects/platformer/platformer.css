@@ -3,7 +3,13 @@ body {
 }
 
 canvas {
-  background-color: lightblue;
+background-image: url("https://deadbydaylight.com/static/a5cdc5db3804f817df112184c81f5ead/93f85/dbd-gallery-background.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+
+
   margin: 20px;
 }
 

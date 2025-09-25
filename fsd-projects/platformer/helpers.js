@@ -1,4 +1,5 @@
 ///// DO NOT CHANGE ANYTHING IN THIS FILE /////
+var gameWon = false;
 
 ///////////////////////////////////////////////
 // Core functionality /////////////////////////
@@ -32,6 +33,13 @@ function main() {
   keyboardControlActions(); //keyboard controls.
   projectileCollision(); //checks if the player is getting hit by a projectile in the next frame
   collectablesCollide(); //checks if player has touched a collectable
+collectablesCollide(); //checks if player has touched a collectable
+
+
+
+
+
+
 
   animate(); //this changes halle's picture to the next frame so it looks animated.
   // debug()                   //debugging values. Comment this out when not debugging.
@@ -201,7 +209,18 @@ function animate() {
   hitDy =
     animationDetails[currentAnimationType].coordinates[Math.floor(frameIndex)]
       .hitDy * playerScale;
+}   
+function victoryScreen() {
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+ctx.fillStyle = "black";
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+ctx.fillStyle = "white";
+ctx.textAlign = "center";
+ctx.font = "bold 72px Arial";
+ctx.fillText("YOU WIN!", canvas.width / 2, canvas.height / 2);
 }
+
+
 
 function drawRobot() {
   //ctx.drawImage(imageVaribale, sourceY, SourceX, sourceWidth, sourceHeight, canvasX, canvasY, finalWidth, finalHeight)

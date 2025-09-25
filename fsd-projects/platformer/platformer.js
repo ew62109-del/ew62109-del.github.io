@@ -32,18 +32,18 @@ $(function () {
 
     // TODO 2 - Create Platforms
 //createPlatform(xPos, yPos, Width, Height)
-createPlatform(200, 700, 100, 5, "green", 100, 1000, 1 ) 
-createPlatform(400, 600, 100, 5, "green", 200,1000,1 )
-createPlatform(200, 500, 100, 5, "green" )
-createPlatform(400, 400, 100, 5, "green" )
+createPlatform(200, 700, 100, 5, "red", 100, 1000, 1 ) 
+createPlatform(400, 600, 100, 5, "red" )
+createPlatform(200, 500, 100, 5, "red", 200, 1000, 1 )
+createPlatform(400, 400, 100, 5, "red", 200, 1000, 1 )
     // TODO 3 - Create Collectables
 
 //createCollectable("type", xPos, yPos, gravity?, bounce? Between 0-1, minX = null, maxX = null, speed = 1)
 
 //"type" can be 6 things... database diamond grace kennedi max steve
 
-createCollectable("database", 400, 300) //Sits Still
-createCollectable("diamond", 600, 100, 0.1)
+createCollectable("database", 500, 300) //Sits Still
+createCollectable("diamond", 600, 400 )
 
     
     // TODO 4 - Create Cannons
